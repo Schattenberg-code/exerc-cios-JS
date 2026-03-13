@@ -1,16 +1,24 @@
 function exer6(){
 
-    let numero = 0;
+    let letra = " ";
 
-    numero = parseInt(prompt("Insira um numero par ou impar:"));
+    letra = (prompt("Insira uma letra para verificar se é vogal ou consoante:"));
 
-    //Não faz sentido tranformar um numero par em impar mas imagino que queria que eu verificasse se a divisão por 2 dá 0.
-    if(numero % 2 == 0){
-        numero+=1
+    if(/[aeiou]/i.test(letra)) {
+
+        console.log("Essa letra é uma vogal.");
+        alert("Essa letra é uma vogal.");
+
+    } else if(/[bcdfghjklmnpqrstvwxyz]/i.test(letra)) {
+
+        console.log("Essa letra é uma consoante.");
+        alert("Essa letra é uma consoante.")
+
     } else {
-        numero+=1
-    }
 
-    console.log("O seu número agora é: " + numero);
+        console.log("Isso não é uma letra.");
+        alert("Isso não é uma letra.");
+        
+    }
 
 }
