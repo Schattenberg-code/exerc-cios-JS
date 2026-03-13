@@ -11,17 +11,21 @@ function exer4(){
         console.log(vetor[i]);
     }
 
-        alert("os numeros escolhidos foram: " + textoembaralha);
+        alert("os numeros escolhidos foram: " + textoembaralha  + " ");
 
-    for(let i = 0; i<4; i++){
+    for(let j = 0; j<4; j++){
+    for(let i = 0; i<3; i++){
         if(vetor[i] < vetor[i+1]){
             aux = vetor[i];
-            vetor[i] = vetor[i=1]
+            vetor[i] = vetor[i+1]
             vetor[i+1] = aux;
-            texto += (vetor[i]);
-        } else {
-            texto += (vetor[i]);
         }
+    }
+}
+
+
+    for(let i = 0; i < 4; i++){
+        texto += vetor[i] + " ";
     }
 
     alert("os numeros organizados ficaram: " + texto);
