@@ -3,6 +3,7 @@ body{
 }
 
 #divbotoes{
+    justify-content: center;
     display: block;
 }
 
@@ -26,6 +27,7 @@ body{
 
 .divbotao{
     margin: 10px;
+    justify-content: center;
 }
 
 .flex{
