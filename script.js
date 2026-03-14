@@ -241,3 +241,53 @@ function exer9(){
 
 
             // exercicio 10 //
+
+
+function exer10(){
+
+    let salario = 0;
+    let nome = " ";
+    let liquido = 0;
+    let salariofinal = 0;
+    let texto = " ";
+
+    nome = prompt("Insira seu nome aqui:");
+    salario = parseInt(prompt("Insira seu salario aqui:"));
+
+    liquido = salario - (salario * 0.08);
+
+    texto = ("Esse é o resumo da folha de pagamento de: " + nome + "\n\nSeu salario bruto é: R$" + salario + "\nO desconto do INSS é de: 8%" + "\nSeu salário liquído é: R$" + liquido + "\nA taxa do INSS foi de: R$" + (salario-liquido));
+
+    alert(texto);
+}
+
+
+            // exercicio 11 //
+
+
+function exer11(){
+
+    let salario = 0;
+    let nome = " ";
+    let liquido = 0;
+    let salariofinal = 0;
+    let texto = " ";
+    let taxa = 0;
+
+    nome = prompt("Insira seu nome aqui:");
+    salario = parseInt(prompt("Insira seu salario aqui:"));
+
+    if(salario < 1000.00){
+        taxa = 0.08;
+    } else if(salario > 1000.01 && salario < 1500.00){
+        taxa = 0.085;
+    } else {
+        taxa = 0.09;
+    }
+
+    liquido = salario - (salario * taxa);
+
+    texto = ("Esse é o resumo da folha de pagamento de: " + nome + "\n\nSeu salario bruto é: R$" + salario + "\nO desconto do INSS é de: " + (taxa*100) + "%\nSeu salário liquído é: R$" + liquido + "\nA taxa do INSS foi de: R$" + (salario-liquido));
+
+    alert(texto);
+}
